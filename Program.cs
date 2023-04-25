@@ -4,8 +4,7 @@ namespace Programmieren_I;
 
 public static class Globals
 {
-	public const string ApplistLocation = "/home/leo/Documents/HTW/Programmieren/Programmieren I/Übungen_Solution" +
-	                                             "/Programmieren I/Uebungen/uebungsnamen.txt";
+	public const string ApplistLocation = "/home/leo/coding/Programmieren I/Uebungen/uebungsnamen.txt";
 }
 internal static class ProgrammierenI
 {
