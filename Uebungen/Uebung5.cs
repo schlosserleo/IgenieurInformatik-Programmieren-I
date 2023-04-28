@@ -11,15 +11,17 @@ internal static class Uebung5
         var begruessung = ErmittleBegruessung(now);
         Console.WriteLine($"{begruessung} {vorName} {nachName}!");
     }
+
     private static List<string?> GetAnswers()
     {
-        var questions = new List<string> { "Vornamen", "Nachnamen"};
+        var questions = new List<string> { "Vornamen", "Nachnamen" };
         var answers = new List<string?>();
         foreach (var i in questions)
         {
             Console.WriteLine($"Bitte geben Sie Ihren {i} ein:");
             answers.Add(Console.ReadLine());
         }
+
         return answers;
     }
 
