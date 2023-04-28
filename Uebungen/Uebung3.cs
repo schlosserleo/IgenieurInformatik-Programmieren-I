@@ -17,7 +17,7 @@ internal static class Uebung3
         int a5 = -1234;
         byte a6 = 123;
         bool a7 = true;
-        decimal a8 = -111111.1m;
+        decimal a8 = -11111.1m;
         ushort a9 = 65535;
 
         int b0 = 0;
