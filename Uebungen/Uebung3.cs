@@ -59,7 +59,7 @@ internal static class Uebung3
     // ReSharper disable once MemberCanBePrivate.Global
     public static double InStunden(int minuten)
     {
-        double stunden = (double)minuten / 60;
+        double stunden = minuten / 60.0;
         return stunden;
     }
 }
