@@ -86,6 +86,27 @@ internal static class ProgrammierenI
             case "2":
                 Uebung2.Eingaben();
                 break;
+            case "2z":
+                ZusaetlicheUebung2.Logikaufgabe();
+                break;
+            case "3":
+                Uebung3.Typen();
+                break;
+            case "3z":
+                ZusaetzlicheUebung3.AusgabeAlsBinärUndHexadezimalZahl();
+                break;
+            case "4":
+                Uebung4.MathematischeFunktionen();
+                break;
+            case "4z":
+                ZusaetzlicheUebung4.Zinsberechnung();
+                break;
+            case "5":
+                Uebung5.AnsweisungenUmsetzen();
+                break;
+            case "5z":
+                ZusaetzlicheUebung5.Fakultaet();
+                break;
             default:
                 Console.WriteLine("Keine valide Eingabe.\nBitte geben sie eine Programmnummer aus der Liste ein");
                 break;

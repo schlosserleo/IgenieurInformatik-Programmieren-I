@@ -6,3 +6,5 @@ Typen
 Ausgabe als Binär- und Hexadezimalzahl
 Mathematische Funktionen
 Zinsberechnung
+Anweisungen Umsetzen
+
