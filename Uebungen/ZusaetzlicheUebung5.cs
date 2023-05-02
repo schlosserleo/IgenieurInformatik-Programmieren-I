@@ -8,7 +8,7 @@ public static class ZusaetzlicheUebung5
 {
     public static void Fakultaet()
     {
-        Console.WriteLine(CalculateFactorial(20));
+        Console.WriteLine(CalculateFactorial(1));
         Console.WriteLine(CalculateBigFactorial(60));
     }
 

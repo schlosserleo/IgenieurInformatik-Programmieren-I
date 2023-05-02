@@ -107,6 +107,9 @@ internal static class ProgrammierenI
             case "5z":
                 ZusaetzlicheUebung5.Fakultaet();
                 break;
+            case "6":
+                Uebung6.ReihenBerechnen();
+                break;
             default:
                 Console.WriteLine("Keine valide Eingabe.\nBitte geben sie eine Programmnummer aus der Liste ein");
                 break;

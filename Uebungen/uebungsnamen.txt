@@ -8,3 +8,4 @@ Mathematische Funktionen
 Zinsberechnung
 Anweisungen Umsetzen
 Fakultät
+Reihen Berechnen

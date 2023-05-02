@@ -9,15 +9,15 @@
     </PropertyGroup>
 
     <ItemGroup>
-        <Compile Remove="venv\**"/>
+        <Compile Remove="venv\**" />
     </ItemGroup>
 
     <ItemGroup>
-        <EmbeddedResource Remove="venv\**"/>
+        <EmbeddedResource Remove="venv\**" />
     </ItemGroup>
 
     <ItemGroup>
-        <None Remove="venv\**"/>
+        <None Remove="venv\**" />
     </ItemGroup>
 
 </Project>
