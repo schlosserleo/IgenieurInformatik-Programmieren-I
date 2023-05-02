@@ -4,7 +4,7 @@ internal static class Uebung5
 {
     public static void AnsweisungenUmsetzen()
     {
-        var now = int.Parse(Console.ReadLine());//DateTime.Now.Hour;
+        var now = int.Parse(Console.ReadLine()); //DateTime.Now.Hour;
         var answers = GetAnswers();
         var vorName = answers[0];
         var nachName = answers[1];
@@ -30,13 +30,12 @@ internal static class Uebung5
     {
         if (stunde is >= 5 and < 11)
             return "Guten Morgen";
-        else if (stunde is >= 11 and < 17)
+        if (stunde is >= 11 and < 17)
             return "Guten Tag";
-        else if (stunde is >= 17 and < 23)
+        if (stunde is >= 17 and < 23)
             return "Guten Abend";
-        else if (stunde is >= 23 and < 24 or >= 0 and < 5)
+        if (stunde is >= 23 and < 24 or >= 0 and < 5)
             return "Gute Nacht";
-        else
-            return "";
+        return "";
     }
 }

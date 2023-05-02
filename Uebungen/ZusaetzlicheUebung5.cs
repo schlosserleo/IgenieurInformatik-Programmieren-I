@@ -16,22 +16,18 @@ public static class ZusaetzlicheUebung5
     {
         long j = 1;
         for (var i = 1; i < number + 1; i++)
-        {
             checked
             {
                 j *= i;
             }
-        }
+
         return j;
     }
 
     public static BigInteger CalculateBigFactorial(uint number)
     {
         BigInteger j = 1;
-        for (var i = 1; i < number + 1; i++)
-        {
-            j *= i;
-        }
+        for (var i = 1; i < number + 1; i++) j *= i;
 
         return j;
     }
