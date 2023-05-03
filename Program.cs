@@ -110,6 +110,9 @@ internal static class ProgrammierenI
             case "6":
                 Uebung6.ReihenBerechnen();
                 break;
+            case "6z":
+                ZusaetzlicheUebung6.NewtonVerfahren();
+                break;
             default:
                 Console.WriteLine("Keine valide Eingabe.\nBitte geben sie eine Programmnummer aus der Liste ein");
                 break;
