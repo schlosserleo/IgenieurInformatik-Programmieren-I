@@ -9,3 +9,5 @@ Zinsberechnung
 Anweisungen Umsetzen
 Fakultät
 Reihen Berechnen
+Newton-Verfahren
+Textanalyse

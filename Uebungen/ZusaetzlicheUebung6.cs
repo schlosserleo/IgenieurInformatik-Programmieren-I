@@ -1,4 +1,5 @@
 // ReSharper disable MemberCanBePrivate.Global
+
 namespace Programmieren_I.Uebungen;
 
 public static class ZusaetzlicheUebung6
@@ -30,6 +31,7 @@ public static class ZusaetzlicheUebung6
             xn -= div;
             i++;
         }
+
         return xn;
     }
 }

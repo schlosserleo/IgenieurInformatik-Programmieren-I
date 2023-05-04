@@ -4,7 +4,7 @@ internal static class Uebung5
 {
     public static void AnsweisungenUmsetzen()
     {
-        var now = int.Parse(Console.ReadLine()); //DateTime.Now.Hour;
+        var now = int.Parse(Console.ReadLine() ?? string.Empty);
         var answers = GetAnswers();
         var vorName = answers[0];
         var nachName = answers[1];
