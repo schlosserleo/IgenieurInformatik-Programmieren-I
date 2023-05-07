@@ -116,6 +116,9 @@ internal static class ProgrammierenI
             case "7":
                 Uebung7.Textanalyse();
                 break;
+            case "7z":
+                ZusaetzlicheUebung7.TextanalyseMitCollections();
+                break;
             default:
                 Console.WriteLine("Keine valide Eingabe.\nBitte geben sie eine Programmnummer aus der Liste ein");
                 break;
