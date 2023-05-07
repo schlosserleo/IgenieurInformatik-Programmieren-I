@@ -11,3 +11,12 @@ Fakultät
 Reihen Berechnen
 Newton-Verfahren
 Textanalyse
+Textanalyse mit Collections
+Datum bestimmen
+Iteration und Rekursion
+Methodenparameter
+Primzahlen
+Klassen erstellen
+Bisektionsverfahren
+Klassen erstellen - Teil 2
+Zahlen sortieren

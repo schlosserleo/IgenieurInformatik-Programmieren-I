@@ -1,5 +1,6 @@
 f = open("applines.txt", "w")
-rf = open("/home/leo/coding/Programmieren I/Uebungen/uebungsnamen.txt", "r")
+# rf = open("/home/leo/coding/Programmieren I/Uebungen/uebungsnamen.txt", "r")
+rf = open("C:\\Users\\gamer\\RiderProjects\\Programmieren-I\\Uebungen\\uebungsnamen.txt", "r")
 i = 1
 while (line := rf.readline()) != "":
     if (i % 2) != 0:
