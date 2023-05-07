@@ -2,12 +2,6 @@
 
 namespace Programmieren_I;
 
-public static class Globals
-{
-    public const string ApplistLocation = "/home/leo/coding/Programmieren I/Uebungen/uebungsnamen.txt";
-    public const string AppLinesLocation = "/home/leo/coding/Programmieren I/python scripts/applines.txt";
-}
-
 internal static class ProgrammierenI
 {
     private static void Main()
@@ -21,6 +15,24 @@ internal static class ProgrammierenI
         LaunchApp(shortAppName);
     }
 
+    private static string OsFileLoc(string namesOrLines)
+    {
+        string appListLocation;
+        string appLinesLocation;
+        if (OperatingSystem.IsWindows())
+        {
+            appListLocation = "C:\\Users\\gamer\\RiderProjects\\Programmieren-I\\Uebungen\\uebungsnamen.txt";
+            appLinesLocation = "C:\\Users\\gamer\\RiderProjects\\Programmieren-I\\python scripts\\applines.txt";
+        }
+        else
+        {
+            appListLocation = "/home/leo/coding/Programmieren I/Uebungen/uebungsnamen.txt";
+            appLinesLocation = "/home/leo/coding/Programmieren I/python scripts/applines.txt";
+        }
+
+        return namesOrLines == "Names" ? appListLocation : appLinesLocation;
+    }   
+
     private static string GetUserInput()
     {
         var selection = Console.ReadLine() ?? throw new InvalidOperationException();
@@ -30,7 +42,7 @@ internal static class ProgrammierenI
     private static string? GetLineContent(int targetline)
     {
         var linecontent = "";
-        var sr = new StreamReader(Globals.ApplistLocation);
+        var sr = new StreamReader(OsFileLoc("Names"));
         for (var i = 0; i <= targetline; i++)
             if (i + 1 == targetline)
                 linecontent = sr.ReadLine();
@@ -63,7 +75,7 @@ internal static class ProgrammierenI
     private static void PrintAppList()
     {
         var i = 1;
-        var sr = new StreamReader(Globals.ApplistLocation);
+        var sr = new StreamReader(OsFileLoc("Names"));
         var line = sr.ReadLine();
         while (line != null)
         {
@@ -128,7 +140,7 @@ internal static class ProgrammierenI
     private static string? GetDotLine(int targetline)
     {
         var linecontent = "";
-        var sr = new StreamReader(Globals.AppLinesLocation);
+        var sr = new StreamReader(OsFileLoc("Lines"));
         for (var i = 0; i <= targetline; i++)
             if (i + 1 == targetline)
                 linecontent = sr.ReadLine();
