@@ -31,7 +31,7 @@ internal static class ProgrammierenI
         }
 
         return namesOrLines == "Names" ? appListLocation : appLinesLocation;
-    }   
+    }
 
     private static string GetUserInput()
     {
@@ -130,6 +130,9 @@ internal static class ProgrammierenI
                 break;
             case "7z":
                 ZusaetzlicheUebung7.TextanalyseMitCollections();
+                break;
+            case "8":
+                Uebung8.DatumBestimmen();
                 break;
             default:
                 Console.WriteLine("Keine valide Eingabe.\nBitte geben sie eine Programmnummer aus der Liste ein");

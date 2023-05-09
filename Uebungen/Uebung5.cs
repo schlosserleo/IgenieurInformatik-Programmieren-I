@@ -28,14 +28,13 @@ internal static class Uebung5
     // ReSharper disable once MemberCanBePrivate.Global
     public static string ErmittleBegruessung(int stunde)
     {
-        if (stunde is >= 5 and < 11)
-            return "Guten Morgen";
-        if (stunde is >= 11 and < 17)
-            return "Guten Tag";
-        if (stunde is >= 17 and < 23)
-            return "Guten Abend";
-        if (stunde is >= 23 and < 24 or >= 0 and < 5)
-            return "Gute Nacht";
-        return "";
+        return stunde switch
+        {
+            >= 5 and < 11 => "Guten Morgen",
+            >= 11 and < 17 => "Guten Tag",
+            >= 17 and < 23 => "Guten Abend",
+            >= 23 and < 24 or >= 0 and < 5 => "Gute Nacht",
+            _ => ""
+        };
     }
 }
