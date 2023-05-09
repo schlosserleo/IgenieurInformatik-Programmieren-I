@@ -107,7 +107,7 @@ internal static class Uebung8
         //var m = (double)((monat + 10) % 12);
         var gregMonth = (MonatGregorianisch)monat;
         var m = Enum.Parse<MonatJulianisch>(gregMonth.ToString());
-        var w = Modulo(d + (2.6 * m. - 0.2) + y + (int)(y / 4) + (int)(c / 4) - 2 * c, 7);
+        var w = Modulo(d + (2.6 * m - 0.2) + y + (int)(y / 4) + (int)(c / 4) - 2 * c, 7);
         return (Wochentag)w;
     }
 }
