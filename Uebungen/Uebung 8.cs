@@ -51,7 +51,7 @@ internal static class Uebung8
 {
     public static void DatumBestimmen()
     {
-        var dates = new[] { "01.03.2007", "07.06.2018", "08.06.2018", "29.05.2019", "09.05.2023" };
+        var dates = new[] { "01.03.2007", "07.06.2018", "08.06.2018", "29.05.2019", "10.05.2023" };
         foreach (var i in dates)
         {
             Console.WriteLine(IstGueltigesDatum(i));
@@ -104,9 +104,8 @@ internal static class Uebung8
         }
 
         var d = (double)tag;
-        //var m = (double)((monat + 10) % 12);
         var gregMonth = (MonatGregorianisch)monat;
-        var m = Enum.Parse<MonatJulianisch>(gregMonth.ToString());
+        var m = (int)Enum.Parse<MonatJulianisch>(gregMonth.ToString());
         var w = Modulo(d + (2.6 * m - 0.2) + y + (int)(y / 4) + (int)(c / 4) - 2 * c, 7);
         return (Wochentag)w;
     }
