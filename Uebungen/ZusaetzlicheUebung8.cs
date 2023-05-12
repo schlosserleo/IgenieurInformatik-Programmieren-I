@@ -41,6 +41,6 @@ internal static class ZusaetzlicheUebung8
         if (t >= 0) return;
         Console.WriteLine(t);
         Thread.Sleep(1000);
-        CountDownRekursiv(t-1);
+        CountDownRekursiv(t - 1);
     }
 }
