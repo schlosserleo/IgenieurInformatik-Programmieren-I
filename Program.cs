@@ -137,6 +137,9 @@ internal static class ProgrammierenI
             case "8z":
                 ZusaetzlicheUebung8.IterationUndRekursion();
                 break;
+            case "9":
+                Uebung9.MethodenParameter();
+                break;
             default:
                 Console.WriteLine("Keine valide Eingabe.\nBitte geben sie eine Programmnummer aus der Liste ein");
                 break;
