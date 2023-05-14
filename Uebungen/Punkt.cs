@@ -24,7 +24,7 @@ public class Punkt
         return Math.Sqrt(Math.Pow(deltaX, 2) + Math.Pow(deltaY, 2) + Math.Pow(deltaZ, 2));
     }
 
-    public new string ToString()
+    public override string ToString()
     {
         return $"{X}, {Y}, {Z}";
     }

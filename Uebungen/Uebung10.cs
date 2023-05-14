@@ -2,7 +2,7 @@ namespace Programmieren_I.Uebungen;
 
 public static class Uebung10
 {
-    public static void Testo()
+    public static void KlassenErstellenTeil1()
     {
         var a = new Punkt
         {
@@ -28,15 +28,24 @@ public static class Uebung10
             Y = 2,
             Z = 2
         };
+        var g = new Linie
+        {
+            StartPunkt = a,
+            EndPunkt = b
+        };
+
         Console.WriteLine($"Testing Punkt.cs\n" +
-                          $"Punkt a: {a.ToString()}\n" +
-                          $"Punkt b: {b.ToString()}\n" +
+                          $"Punkt a: {a}\n" +
+                          $"Punkt b: {b}\n" +
                           $"Abstand von a zu b (object method): {a.AbstandZu(b)}\n" +
                           $"Abstand von b zu a (class method): {Punkt.AbstandZwischen(b, a)}\n\n" +
                           $"Testing Vektor.cs\n" +
-                          $"Vektor a: {va.ToString()}\n" +
-                          $"Vektor b: {vb.ToString()}\n" +
+                          $"Vektor a: {va}\n" +
+                          $"Vektor b: {vb}\n" +
                           $"Skalarprodukt von Vektor a und b (object method): {va.BerechneSkalarprodukt(vb)}\n" +
-                          $"Skalarprodukt von Vektor b und a (class method: {Vektor.BerechneSkalarprodukt(vb, va)}");
+                          $"Skalarprodukt von Vektor b und a (class method: {Vektor.BerechneSkalarprodukt(vb, va)}\n" +
+                          $"Testing Linie.cs\n" +
+                          $"Linie g: {g}\n" +
+                          $"Länge von g: {g.Laenge}");
     }
 }

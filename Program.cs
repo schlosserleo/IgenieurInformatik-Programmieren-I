@@ -144,7 +144,7 @@ internal static class ProgrammierenI
                 ZusaetzlicheUebung9.PrimzahlenOderDasSiebDesEratosthenes();
                 break;
             case "10":
-                Uebung10.Testo();
+                Uebung10.KlassenErstellenTeil1();
                 break;
             default:
                 Console.WriteLine("Keine valide Eingabe.\nBitte geben sie eine Programmnummer aus der Liste ein");
