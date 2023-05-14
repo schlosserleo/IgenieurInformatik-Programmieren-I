@@ -1,3 +1,5 @@
+// ReSharper disable PropertyCanBeMadeInitOnly.Global
+
 namespace Programmieren_I.Uebungen;
 
 public class Punkt
