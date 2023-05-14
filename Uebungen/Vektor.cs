@@ -1,32 +1,18 @@
 // ReSharper disable InconsistentNaming
+
 namespace Programmieren_I.Uebungen;
 
 public class Vektor
 {
-    private double x;
-    private double y;
-    private double z;
-    public double X
-    {
-        get => x;
-        set => x = value;
-    }
+    public double X { get; set; }
 
-    public double Y
-    {
-        get => y;
-        set => y = value;
-    }
+    public double Y { get; set; }
 
-    public double Z
-    {
-        get => z;
-        set => z = value;
-    }
+    public double Z { get; set; }
 
     public double BerechneSkalarprodukt(Vektor b)
     {
-        return x * b.X + y * b.Y + z * b.Z;
+        return X * b.X + Y * b.Y + Z * b.Z;
     }
 
     public static double BerechneSkalarprodukt(Vektor a, Vektor b)
@@ -36,7 +22,6 @@ public class Vektor
 
     public new string ToString()
     {
-        return $"{x}, {y}, {z}";
+        return $"{X}, {Y}, {Z}";
     }
-    
 }

@@ -8,7 +8,7 @@ public static class Uebung10
         {
             X = 1,
             Y = 1,
-            Z = 0    
+            Z = 0
         };
         var b = new Punkt
         {
