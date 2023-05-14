@@ -33,5 +33,10 @@ public class Vektor
     {
         return a.X * b.X + a.Y * b.Y + a.Z * b.Z;
     }
+
+    public new string ToString()
+    {
+        return $"{x}, {y}, {z}";
+    }
     
 }
