@@ -43,9 +43,8 @@ public static class Uebung10
                           $"Vektor a: {va}\n" +
                           $"Vektor b: {vb}\n" +
                           $"Skalarprodukt von Vektor a und b (object method): {va.BerechneSkalarprodukt(vb)}\n" +
-                          $"Skalarprodukt von Vektor b und a (class method: {Vektor.BerechneSkalarprodukt(vb, va)}\n" +
+                          $"Skalarprodukt von Vektor b und a (class method): {Vektor.BerechneSkalarprodukt(vb, va)}\n\n" +
                           $"Testing Linie.cs\n" +
-                          $"Linie g: {g}\n" +
-                          $"Länge von g: {g.Laenge}");
+                          $"Linie g: {g}\n");
     }
 }
