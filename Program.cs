@@ -140,6 +140,12 @@ internal static class ProgrammierenI
             case "9":
                 Uebung9.MethodenParameter();
                 break;
+            case "9z":
+                ZusaetzlicheUebung9.PrimzahlenOderDasSiebDesEratosthenes();
+                break;
+            case "10":
+                Uebung10.Testo();
+                break;
             default:
                 Console.WriteLine("Keine valide Eingabe.\nBitte geben sie eine Programmnummer aus der Liste ein");
                 break;
