@@ -149,6 +149,9 @@ internal static class ProgrammierenI
             case "10z":
                 ZusaetzlicheUebung10.BisektionsVerfahren();
                 break;
+            case "11":
+                Uebung11.KlassenErstellenTeil2();
+                break;
             default:
                 Console.WriteLine("Keine valide Eingabe.\nBitte geben sie eine Programmnummer aus der Liste ein");
                 break;

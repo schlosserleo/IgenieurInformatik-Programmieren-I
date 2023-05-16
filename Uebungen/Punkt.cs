@@ -10,6 +10,12 @@ public class Punkt
 
     public double Z { get; set; }
 
+    public Punkt(double x = 0, double y = 0, double z = 0)
+    {
+        X = x;
+        Y = y;
+        Z = z;
+    }
     public double AbstandZu(Punkt endPunkt)
     {
         var deltaX = X - endPunkt.X;
@@ -26,6 +32,26 @@ public class Punkt
         return Math.Sqrt(Math.Pow(deltaX, 2) + Math.Pow(deltaY, 2) + Math.Pow(deltaZ, 2));
     }
 
+    public Vektor BildeVektor(Punkt endPunkt)
+    {
+        var deltaX = endPunkt.X - X;
+        var deltaY = endPunkt.Y - Y;
+        var deltaZ = endPunkt.Z - Z;
+        return new Vektor(deltaX, deltaY, deltaZ);
+    }
+
+    public static Vektor BildeVektor(Punkt startPunkt, Punkt endPunkt)
+    {
+        var deltaX = endPunkt.X - startPunkt.X;
+        var deltaY = endPunkt.Y - startPunkt.Y;
+        var deltaZ = endPunkt.Z - startPunkt.Z;
+        return new Vektor(deltaX, deltaY, deltaZ);
+    }
+
+    public Vektor AlsVektor()
+    {
+        return new Vektor(X, Y, Z);
+    }
     public override string ToString()
     {
         return $"{X}, {Y}, {Z}";
