@@ -15,11 +15,11 @@ public class ZusaetzlicheUebung10
     public static double CalculateRootOfPolynomial(double a, double b)
     {
         var midPoint = double.NaN;
-        var maxTolerance = Math.Pow(10, -6)
+        var maxTolerance = Math.Pow(10, -6);
         for (var i = 1; i <= 1000; i++)
         {
             if (!(a < b)) return midPoint;
-            
+            if ((ContinousFunction(a) < 0 && ContinousFunction(b) > 0) || ContinousFunction(a) > 0 && ContinousFunction(b) < 0)
         }
     }
 }
