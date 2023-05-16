@@ -26,8 +26,8 @@ internal static class ProgrammierenI
         }
         else
         {
-            appListLocation = "/home/leo/coding/Programmieren I/Uebungen/uebungsnamen.txt";
-            appLinesLocation = "/home/leo/coding/Programmieren I/python scripts/applines.txt";
+            appListLocation = "/home/leo/coding/Programmieren-I/Uebungen/uebungsnamen.txt";
+            appLinesLocation = "/home/leo/coding/Programmieren-I/python scripts/applines.txt";
         }
 
         return namesOrLines == "Names" ? appListLocation : appLinesLocation;
@@ -145,6 +145,9 @@ internal static class ProgrammierenI
                 break;
             case "10":
                 Uebung10.KlassenErstellenTeil1();
+                break;
+            case "10z":
+                ZusaetzlicheUebung10.BisektionsVerfahren();
                 break;
             default:
                 Console.WriteLine("Keine valide Eingabe.\nBitte geben sie eine Programmnummer aus der Liste ein");
