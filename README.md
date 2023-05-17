@@ -14,3 +14,9 @@ hinzufügen)
 Ich bitte jeden Kursteilnehmer meinen Code nicht einfach zu übernehmen sondern ihn als inspiration wenn man nicht
 weiterkommt zu verwenden oder wenn man an einer zweiten Lösung interessiert ist.
 
+#Requirements
+
+Dotnet 7.0
+
+https://dotnet.microsoft.com/en-us/download/dotnet/7.0
+
