@@ -25,13 +25,13 @@ internal static class ProgrammierenI
         string appLinesLocation;
         if (OperatingSystem.IsWindows())
         {
-            appListLocation = "C:\\Users\\gamer\\RiderProjects\\Programmieren-I\\Uebungen\\uebungsnamen.txt";
-            appLinesLocation = "C:\\Users\\gamer\\RiderProjects\\Programmieren-I\\python scripts\\applines.txt";
+            appListLocation = ".\\uebungsnamen.txt";
+            appLinesLocation = ".\\applines.txt";
         }
         else
         {
-            appListLocation = "/home/leo/coding/Programmieren-I/Uebungen/uebungsnamen.txt";
-            appLinesLocation = "/home/leo/coding/Programmieren-I/python scripts/applines.txt";
+            appListLocation = "./uebungsnamen.txt";
+            appLinesLocation = "./applines.txt";
         }
 
         return namesOrLines == "Names" ? appListLocation : appLinesLocation;

@@ -1,6 +1,9 @@
-f = open("applines.txt", "w")
-# rf = open("/home/leo/coding/Programmieren I/Uebungen/uebungsnamen.txt", "r")
-rf = open("C:\\Users\\gamer\\RiderProjects\\Programmieren-I\\Uebungen\\uebungsnamen.txt", "r")
+import os
+dirname = os.path.dirname(__file__)
+filename = os.path.join(dirname, '../bin/Debug/net7.0/applines.txt')
+filename2 = os.path.join(dirname, '../bin/Debug/net7.0/uebungsnamen.txt')
+f = open(filename, "w")
+rf = open(filename2, "r")
 i = 1
 while (line := rf.readline()) != "":
     if (i % 2) != 0:
