@@ -8,7 +8,8 @@ kann.
 Der Code wurde in JetBrains Rider geschrieben und Kompiliert.
 **Reines Copy-Paste funktioniert für das moodle VPL nicht!**
 
-Der Code für die jeweiligen Übungen befindet sich in /Uebungen (z.B Übung 6 ist in /.../Programmieren-I/Uebungen/Uebung6.cs)
+Der Code für die jeweiligen Übungen befindet sich in /Uebungen 
+(z.B Übung 6 ist in /.../Programmieren-I/Uebungen/Uebung6.cs)
 Man muss ihn an die Anforderungen im VPL angepassen (z.B namespace ändern, using System etc, Main methode
 hinzufügen)
 
