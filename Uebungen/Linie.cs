@@ -4,18 +4,19 @@ namespace Programmieren_I.Uebungen;
 
 public class Linie
 {
+    public Linie(Punkt startPunkt = null!,
+        Punkt endPunkt = null!) // = null nur benötigt damit Übung 10 noch funktioniert
+    {
+        StartPunkt = startPunkt;
+        EndPunkt = endPunkt;
+    }
+
     public Punkt StartPunkt { get; set; }
 
     public Punkt EndPunkt { get; set; }
 
     // ReSharper disable once MemberCanBePrivate.Global
     public double Laenge => Punkt.AbstandZwischen(StartPunkt, EndPunkt);
-
-    public Linie(Punkt startPunkt = null!, Punkt endPunkt = null!)// = null nur benötigt damit Übung 10 noch funktioniert
-    {
-        StartPunkt = startPunkt;
-        EndPunkt = endPunkt;
-    }
 
     public Linie VerschiebeUmVektor(Vektor verschiebeVektor)
     {
@@ -27,6 +28,7 @@ public class Linie
 
         return new Linie(verschobenerStartPunkt, verschobenerEndPunkt);
     }
+
     public override string ToString()
     {
         return

@@ -25,3 +25,4 @@ public class Vektor
         return $"{X}, {Y}, {Z}";
     }
 }*/
+

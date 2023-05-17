@@ -31,3 +31,4 @@ public class Punkt
         return $"{X}, {Y}, {Z}";
     }
 }*/
+

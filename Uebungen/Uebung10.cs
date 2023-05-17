@@ -28,7 +28,7 @@ public static class Uebung10
             Y = 2,
             Z = 2
         };
-        var g = new Linie()  //This Line here breaks if Linie() has a canstructor!
+        var g = new Linie() //This Line here breaks if Linie() has a canstructor!
         {
             StartPunkt = a,
             EndPunkt = b

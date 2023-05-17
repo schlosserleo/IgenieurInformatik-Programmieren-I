@@ -152,6 +152,9 @@ internal static class ProgrammierenI
             case "11":
                 Uebung11.KlassenErstellenTeil2();
                 break;
+            case "11z":
+                ZusaetzlicheUebung11.ZahlenSortieren();
+                break;
             default:
                 Console.WriteLine("Keine valide Eingabe.\nBitte geben sie eine Programmnummer aus der Liste ein");
                 break;

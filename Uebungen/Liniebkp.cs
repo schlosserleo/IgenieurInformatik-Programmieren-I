@@ -17,3 +17,4 @@ public class Linie
             $"({StartPunkt.X}, {StartPunkt.Y}, {StartPunkt.Z}), ({EndPunkt.X}, {EndPunkt.Y}, {EndPunkt.Z}), {Laenge}";
     }
 }*/
+

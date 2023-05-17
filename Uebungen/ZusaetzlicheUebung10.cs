@@ -1,4 +1,5 @@
 // ReSharper disable MemberCanBePrivate.Global
+
 namespace Programmieren_I.Uebungen;
 
 public static class ZusaetzlicheUebung10
@@ -7,7 +8,7 @@ public static class ZusaetzlicheUebung10
     {
         Console.WriteLine(CalculateRootOfPolynomial(-4, 4));
     }
-    
+
     public static double ContinousFunction(double x)
     {
         return Math.Pow(x, 3) + x - 5;

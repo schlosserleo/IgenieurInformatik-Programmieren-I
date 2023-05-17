@@ -4,18 +4,19 @@ namespace Programmieren_I.Uebungen;
 
 public class Punkt
 {
-    public double X { get; set; }
-
-    public double Y { get; set; }
-
-    public double Z { get; set; }
-
     public Punkt(double x = 0, double y = 0, double z = 0)
     {
         X = x;
         Y = y;
         Z = z;
     }
+
+    public double X { get; set; }
+
+    public double Y { get; set; }
+
+    public double Z { get; set; }
+
     public double AbstandZu(Punkt endPunkt)
     {
         var deltaX = X - endPunkt.X;
@@ -52,6 +53,7 @@ public class Punkt
     {
         return new Vektor(X, Y, Z);
     }
+
     public override string ToString()
     {
         return $"{X}, {Y}, {Z}";
