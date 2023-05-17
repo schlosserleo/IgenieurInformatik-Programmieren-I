@@ -26,7 +26,7 @@ public class ZufallszahlenGenerator
         for (var i = 0; i < Anzahl; i++) result[i] = rnd.Next(Untergrenze, Obergrenze);
 
         Array.Sort(result);
-        
+
         return result;
     }
 }

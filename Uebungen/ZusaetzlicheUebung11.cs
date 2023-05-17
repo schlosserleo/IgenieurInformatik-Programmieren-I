@@ -9,7 +9,7 @@ public static class ZusaetzlicheUebung11
         GebeArrayAus(zufallsListe);
         //Console.WriteLine(Console.WindowHeight);
     }
-    
+
     // ReSharper disable once MemberCanBePrivate.Global
     public static void GebeArrayAus(int[] zahlen)
     {
@@ -20,13 +20,15 @@ public static class ZusaetzlicheUebung11
             if (j == maxLines)
             {
                 Console.WriteLine("Bitte Enter für die nächste Seite drücken");
-                while (Console.ReadKey().Key != ConsoleKey.Enter){}
+                while (Console.ReadKey().Key != ConsoleKey.Enter)
+                {
+                }
 
                 j = 1;
             }
+
             Console.WriteLine($"{i}, ");
             j++;
         }
-            
     }
 }

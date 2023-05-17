@@ -17,7 +17,6 @@ internal static class ProgrammierenI
 
             Console.WriteLine("Ungültige Eingabe. Bitte geben Sie eine gültige Programmnummer aus der Liste ein.");
         }
-        
     }
 
     private static string OsFileLoc(string namesOrLines)
@@ -98,7 +97,7 @@ internal static class ProgrammierenI
             { "1", Uebung1.Anfaenge },
             { "1z", ZusaetzlicheUebung1.Rechner },
             { "2", Uebung2.Eingaben },
-            { "2z", ZusaetlicheUebung2.Logikaufgabe },
+            { "2z", ZusaetlicheUebung2.Logikaufgabe }
             // Weitere Zuordnungen hier hinzufügen
         };
 
