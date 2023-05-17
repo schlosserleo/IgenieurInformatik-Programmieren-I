@@ -97,8 +97,25 @@ internal static class ProgrammierenI
             { "1", Uebung1.Anfaenge },
             { "1z", ZusaetzlicheUebung1.Rechner },
             { "2", Uebung2.Eingaben },
-            { "2z", ZusaetlicheUebung2.Logikaufgabe }
-            // Weitere Zuordnungen hier hinzufügen
+            { "2z", ZusaetlicheUebung2.Logikaufgabe },
+            { "3", Uebung3.Typen },
+            { "3z", ZusaetzlicheUebung3.AusgabeAlsBinärUndHexadezimalZahl },
+            { "4", Uebung4.MathematischeFunktionen },
+            { "4z", ZusaetzlicheUebung4.Zinsberechnung },
+            { "5", Uebung5.AnsweisungenUmsetzen },
+            { "5z", ZusaetzlicheUebung5.Fakultaet },
+            { "6", Uebung6.ReihenBerechnen },
+            { "6z", ZusaetzlicheUebung6.NewtonVerfahren },
+            { "7", Uebung7.Textanalyse },
+            { "7z", ZusaetzlicheUebung7.TextanalyseMitCollections },
+            { "8", Uebung8.DatumBestimmen },
+            { "8z", ZusaetzlicheUebung8.IterationUndRekursion },
+            { "9", Uebung9.MethodenParameter },
+            { "9z", ZusaetzlicheUebung9.PrimzahlenOderDasSiebDesEratosthenes },
+            { "10", Uebung10.KlassenErstellenTeil1 },
+            { "10z", ZusaetzlicheUebung10.BisektionsVerfahren },
+            { "11", Uebung11.KlassenErstellenTeil2 },
+            { "11z", ZusaetzlicheUebung11.ZahlenSortieren }
         };
 
         if (!appDictionary.TryGetValue(shortAppName, out var appAction)) return false;
@@ -108,7 +125,6 @@ internal static class ProgrammierenI
         appAction.Invoke();
         return true;
     }
-
 
     private static string? GetDotLine(int targetline)
     {
