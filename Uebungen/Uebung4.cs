@@ -6,7 +6,7 @@ internal static class Uebung4
 {
     public static void MathematischeFunktionen()
     {
-        Mul(Add(1, 2), Sub(42, 1));
+        Console.Write(Mul(Add(1, 2), Sub(42, 1)));
     }
 
     public static int Add(int a, int b)

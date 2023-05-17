@@ -1,4 +1,5 @@
 import os
+
 dirname = os.path.dirname(__file__)
 filename = os.path.join(dirname, '../bin/Debug/net7.0/applines.txt')
 filename2 = os.path.join(dirname, '../bin/Debug/net7.0/uebungsnamen.txt')
