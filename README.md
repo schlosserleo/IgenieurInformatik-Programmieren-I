@@ -1,0 +1,9 @@
+# Programmieren-I
+Lösungen für Übungen in Programmieren I an der HTW Berlin
+Das Kompilierte Programm startet einen Launcher(in der Konsole) in dem man ein bestimmtes programm auswählen und starten kann.
+
+Der Code wurde in JetBrains Rider geschrieben und Kompiliert.
+**Reines Copy-Paste funktioniert für das moodle VPL nicht!**
+Man muss ihn an die Anforderungen im VPL angepasst werden (z.B namespace ändern, using System etc, Main methode hinzufügen)
+Ich bitte jeden Kursteilnehmer meinen Code nicht einfach zu übernehmen sondern ihn als inspiration wenn man nicht weiterkommt zu verwenden oder wenn man an einer zweiten Lösung interessiert ist.
+
