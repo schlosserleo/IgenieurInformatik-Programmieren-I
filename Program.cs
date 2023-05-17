@@ -6,13 +6,20 @@ internal static class ProgrammierenI
 {
     private static void Main()
     {
-        Console.WriteLine("Sie haben folgende Programme zur Auswahl(Eingabe nach Schema: 1/2/2z/3z)");
-        PrintAppList();
-        var shortAppName = GetUserInput();
-        var lineInTxtFile = GetLine(shortAppName);
-        Console.WriteLine($"Starte {BuildAppName(lineInTxtFile, GetLineContent(lineInTxtFile))}\n" +
-                          $"{GetDotLine(lineInTxtFile)}");
-        LaunchApp(shortAppName);
+        int lineInTxtFile;
+        while (true)
+        {
+            Console.WriteLine("Sie haben folgende Programme zur Auswahl(Eingabe nach Schema: 1/2/2z/3z)");
+            PrintAppList(); 
+            var shortAppName = GetUserInput();
+            
+
+            if (LaunchApp(shortAppName))
+                break;
+
+            Console.WriteLine("Ungültige Eingabe. Bitte geben Sie eine gültige Programmnummer aus der Liste ein.");
+        }
+        
     }
 
     private static string OsFileLoc(string namesOrLines)
@@ -85,81 +92,100 @@ internal static class ProgrammierenI
         }
     }
 
-    private static void LaunchApp(string shortAppName)
+    /*private static bool LaunchApp(string shortAppName)
     {
         switch (shortAppName)
         {
             case "1":
                 Uebung1.Anfaenge();
-                break;
+                return true;
             case "1z":
                 ZusaetzlicheUebung1.Rechner();
-                break;
+                return true;
             case "2":
                 Uebung2.Eingaben();
-                break;
+                return true;
             case "2z":
                 ZusaetlicheUebung2.Logikaufgabe();
-                break;
+                return true;
             case "3":
                 Uebung3.Typen();
-                break;
+                return true;
             case "3z":
                 ZusaetzlicheUebung3.AusgabeAlsBinärUndHexadezimalZahl();
-                break;
+                return true;
             case "4":
                 Uebung4.MathematischeFunktionen();
-                break;
+                return true;
             case "4z":
                 ZusaetzlicheUebung4.Zinsberechnung();
-                break;
+                return true;
             case "5":
                 Uebung5.AnsweisungenUmsetzen();
-                break;
+                return true;
             case "5z":
                 ZusaetzlicheUebung5.Fakultaet();
-                break;
+                return true;
             case "6":
                 Uebung6.ReihenBerechnen();
-                break;
+                return true;
             case "6z":
                 ZusaetzlicheUebung6.NewtonVerfahren();
-                break;
+                return true;
             case "7":
                 Uebung7.Textanalyse();
-                break;
+                return true;
             case "7z":
                 ZusaetzlicheUebung7.TextanalyseMitCollections();
-                break;
+                return true;
             case "8":
                 Uebung8.DatumBestimmen();
-                break;
+                return true;
             case "8z":
                 ZusaetzlicheUebung8.IterationUndRekursion();
-                break;
+                return true;
             case "9":
                 Uebung9.MethodenParameter();
-                break;
+                return true;
             case "9z":
                 ZusaetzlicheUebung9.PrimzahlenOderDasSiebDesEratosthenes();
-                break;
+                return true;
             case "10":
                 Uebung10.KlassenErstellenTeil1();
-                break;
+                return true;
             case "10z":
                 ZusaetzlicheUebung10.BisektionsVerfahren();
-                break;
+                return true;
             case "11":
                 Uebung11.KlassenErstellenTeil2();
-                break;
+                return true;
             case "11z":
                 ZusaetzlicheUebung11.ZahlenSortieren();
-                break;
+                return true;
             default:
                 Console.WriteLine("Keine valide Eingabe.\nBitte geben sie eine Programmnummer aus der Liste ein");
-                break;
+                return false;
         }
+    }*/
+    private static bool LaunchApp(string shortAppName)
+    {
+        var appDictionary = new Dictionary<string, Action>
+        {
+            { "1", Uebung1.Anfaenge },
+            { "1z", ZusaetzlicheUebung1.Rechner },
+            { "2", Uebung2.Eingaben },
+            { "2z", ZusaetlicheUebung2.Logikaufgabe },
+            // Weitere Zuordnungen hier hinzufügen
+        };
+
+        if (!appDictionary.TryGetValue(shortAppName, out var appAction)) return false;
+        var lineInTxtFile = GetLine(shortAppName);
+        Console.WriteLine($"Starte {BuildAppName(lineInTxtFile, GetLineContent(lineInTxtFile))}\n" +
+                          $"{GetDotLine(lineInTxtFile)}");
+        appAction.Invoke();
+        return true;
     }
+
 
     private static string? GetDotLine(int targetline)
     {

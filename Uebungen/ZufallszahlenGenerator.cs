@@ -9,11 +9,11 @@ public class ZufallszahlenGenerator
         Obergrenze = obergrenze;
     }
 
-    public int Anzahl { get; set; }
+    private int Anzahl { get; }
 
-    public int Untergrenze { get; set; }
+    private int Untergrenze { get; }
 
-    public int Obergrenze { get; set; }
+    private int Obergrenze { get; }
 
     // ReSharper disable once ReturnTypeCanBeEnumerable.Global
     // ReSharper disable once MemberCanBePrivate.Global
@@ -21,9 +21,12 @@ public class ZufallszahlenGenerator
     {
         var rnd = new Random();
         var result = new int[Anzahl];
+
         if (Anzahl <= 0 || Untergrenze >= Obergrenze) return null!;
         for (var i = 0; i < Anzahl; i++) result[i] = rnd.Next(Untergrenze, Obergrenze);
+
         Array.Sort(result);
+        
         return result;
     }
 }

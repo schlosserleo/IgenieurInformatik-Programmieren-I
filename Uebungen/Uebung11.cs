@@ -9,6 +9,7 @@ public static class Uebung11
         var va = new Vektor(2, 2, 2);
         var vb = new Vektor(1, 1, 1);
         var g = new Linie(a, b);
+        
         Console.WriteLine($"Testing Punkt.cs\n" +
                           $"Punkt a: {a}\n" +
                           $"Punkt b: {b}\n" +
